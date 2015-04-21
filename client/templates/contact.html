@@ -1,0 +1,60 @@
+<div class="row">
+			<div class=" col-md-4 col-lg-4 col-sm-2 col-xs-1"></div>
+						<div class="page-header col-md-4 col-lg-4 col-sm-8 col-xs-10">
+						  <i><h1>Send message for me! </h1></i>
+						</div>
+			<div class=" col-md-4 col-lg-4 col-sm-2 "></div>
+		  <div class="row">
+			  	<div class=" col-md-4 col-lg-4 col-sm-2 "></div> 
+			<div class=" col-md-4 col-lg-4 col-sm-8 col-xs-12">
+				<small>I'm currently <span>AVAILABLE</span> for new projects.</small>
+			</div>  
+			  <div class=" col-md-4 col-lg-4 col-sm-2 "></div>
+		  </div>
+</div>
+<section ng-controller="formCtrl">
+           <form   id="ajaxform" name="MessageForm" ng-submit="sendMessage(formData)&&MessageForm.$valid">
+                <input class="name" type="text"  placeholder="Name" ng-model="formData.name" required>
+                 <input class="email" type="email" placeholder="Email" ng-model="formData.email" required>
+                 <textarea class="message" name="message" placeholder="Message" ng-model="formData.message" required></textarea>
+            <button type="submit" class="butt" name="submit">Send!</button> 
+            </form>
+         </section>
+         
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Yaruna's Website 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li> <a class="fa-stack fa-2x" href="#/work"
+                             ><i class="fa"></i>
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a>
+                        </li>
+                        <li> <a class="fa-stack fa-2x" href="#/contact">
+                              <i class="fa"></i>
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-vk fa-stack-1x fa-inverse"></i></a>
+                        </li>
+                        <li>       <a class="fa-stack fa-2x" href="#/contact">
+                              <i class="fa"></i>
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
