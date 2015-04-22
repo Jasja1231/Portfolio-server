@@ -27,14 +27,16 @@
             .state('contact', {
                 url: "/contact",
                 views: {
-                    "contact": { templateUrl: 'templates/contact.html' }
+                    "contact": { templateUrl: 'templates/contact.html' },
+                controller:'formCtrl'
                 }
           })
             .state('afterSending', {
                 url: "/afterSending",
                 views: {
                     "afterSending": { templateUrl: 'templates/afterSending.html' }
-                }
+                },
+                controller:'afterCtrl'
           });  
         });
     })();

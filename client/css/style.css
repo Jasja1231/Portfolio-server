@@ -1,8 +1,6 @@
 
-
-
 html,body{
-	min-width:100%;
+  min-width:100%;
    background: url(https://unsplash.imgix.net/photo-1414490929659-9a12b7e31907);
   height: 100vh;
    size: cover;
@@ -31,10 +29,10 @@ navigation form
 
 
 .div-for-button{
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   box-sizing:border-box;
   border: 1px solid #d1d1d1;
   background: #f5f5f5;
@@ -53,10 +51,10 @@ background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 
 .div-for-button a{
-	  font-family:bold 6em/8em 'Alegreya Sans', sans-serif, Arial, sans-serif;
-	  font-size: 100%;
+    font-family:bold 6em/8em 'Alegreya Sans', sans-serif, Arial, sans-serif;
+    font-size: 100%;
   color: #5C5C5C;
-	  text-decoration: none;
+    text-decoration: none;
 }
 .div-for-button a:hover {
   background: #ececec;
@@ -119,7 +117,7 @@ input:focus {
 }
  .email:focus{
   background: #f5f5f5;
-	color: black;
+  color: black;
 }
 
  .name{
@@ -220,13 +218,22 @@ background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   outline:none;
 }
 
-.butt:focus {
-    outline: none;
-}
+
 /*
 end form for sending 
 */
 
+
+.ng-dirty.ng-valid-parse{
+  border-color:red;
+}
+
+.ng-dirty.ng-valid{
+border-color:green;
+}
+.ng-dirty.ng-invalid{
+  border-color:red;
+}
 
 
 @media screen and (max-width: 500px) /* Mobile */ {
@@ -276,8 +283,7 @@ div .row{
 div small{
    color: #2fb49f;
    text-align: center;
-    
-   padding-left: 3em; 
+    padding-left: 5em; 
 }
 div small span{
 font: 'Alegreya Sans', Arial, sans-serif;
@@ -421,6 +427,7 @@ position: relative;
 
 
 
+
  .fa-stack{
     color: #505050;
 }
@@ -438,14 +445,14 @@ position: relative;
 
 #about article {
   float: left;
-  width: %;
+  width: 100%;
   background: url() no-repeat center 50px;
   padding-top: 5px;
   text-align: center;
 }
 
 div small{
-  /* padding-left: 7.5em; */
+  padding-left: 7.5em;
 }
 
 .div-foto{
@@ -669,6 +676,7 @@ footer .row{
 
 }
 
+
 .name.ng-invalid.ng-dirty {
   border-color:red;
 }
@@ -682,16 +690,16 @@ footer .row{
 
 
 
-.name.ng-valid{
+.name.ng-valid.ng-dirty{
 border-color:green;
 }
-.email.ng-valid {
+.email.ng-valid.ng-dirty {
 border-color:green;
 
 }
 
 
-.message.ng-valid {
+.message.ng-valid.ng-dirty {
 border-color:green;
 
 }
@@ -699,4 +707,3 @@ border-color:green;
 h1 span {
   color:silver;
 }
-
