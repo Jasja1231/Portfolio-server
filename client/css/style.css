@@ -314,6 +314,7 @@ position: relative;
 }
 #about article ul{
   list-style: none;
+  margin-left: -34px;
 }
 #about article ul li{
   text-align: center;

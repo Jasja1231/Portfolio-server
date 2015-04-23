@@ -12,6 +12,7 @@ app.controller('formCtrl', function($rootScope,$scope ,$state, $http){
      $scope.afterPage();
      $http.post('http://localhost:8000/api/form', data)
       .success(function (resp ) {
+        alert(resp);
        console.log(resp);
       })
       .error(function(error) {
