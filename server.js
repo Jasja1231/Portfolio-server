@@ -21,6 +21,7 @@ var morgan = require('morgan'),
 
 
 
+   var nodemailer = require('nodemailer');
 
 
 

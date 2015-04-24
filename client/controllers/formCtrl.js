@@ -24,6 +24,7 @@ app.controller('formCtrl', function($rootScope,$scope ,$state, $http, $window, n
      $http.post('http://localhost:8000/api/form', data)
       .success(function (resp ) {
        console.log(resp);
+       $rootScope.alert="Your message send";
       })
       .error(function(error) {
        console.log(error);
@@ -36,10 +37,10 @@ app.controller('formCtrl', function($rootScope,$scope ,$state, $http, $window, n
 
     };
             $scope.writing = function (elem){
-              angular.element('.name').removeClass('afterSend');
+          angular.element('.name').removeClass('afterSend');
           angular.element('.email').removeClass('afterSend');
           angular.element('.message').removeClass('afterSend');
           
-        }
+        };
 
 });
