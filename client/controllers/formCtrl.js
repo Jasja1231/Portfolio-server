@@ -1,6 +1,6 @@
 var app = angular.module('portfolioApp');
 
-app.controller('formCtrl', function($rootScope,$scope ,$state, $http, ngDialog){
+app.controller('formCtrl', function($rootScope,$scope ,$state, $http, $window, ngDialog){
 
      $rootScope.formData = {};
 
@@ -15,7 +15,7 @@ app.controller('formCtrl', function($rootScope,$scope ,$state, $http, ngDialog){
           windowClass: 'center-modal',
           scope: $scope
         });
-     setTimeout(function () {
+    setTimeout(function () {
           dialog.close();
         }, 4000);
       };        
@@ -29,7 +29,17 @@ app.controller('formCtrl', function($rootScope,$scope ,$state, $http, ngDialog){
        console.log(error);
       });
           $scope.openTimed();
-          setTimeout(function () {
-          $state.go(''),5000});
+              angular.element('.name').addClass('afterSend');
+              angular.element('.email').addClass('afterSend');
+              angular.element('.message').addClass('afterSend');
+
+
     };
+            $scope.writing = function (elem){
+              angular.element('.name').removeClass('afterSend');
+          angular.element('.email').removeClass('afterSend');
+          angular.element('.message').removeClass('afterSend');
+          
+        }
+
 });

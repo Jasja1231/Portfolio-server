@@ -14,9 +14,9 @@
 </div>
 <section ng-controller="formCtrl">
            <form  id="ajaxform" name="MessageForm" ng-submit="sendMessage(formData)&&MessageForm.$valid">
-                <input class="name" type="text"  placeholder="Name" ng-model="formData.name" required>
-                 <input class="email" type="email" placeholder="Email" ng-model="formData.email" required>
-                 <textarea class="message" name="message" placeholder="Message" ng-model="formData.message" required></textarea>
+                <input ng-click="writing()" class="name" type="text"  placeholder="Name" ng-model="formData.name" required>
+                 <input ng-click="writing()" class="email" type="email" placeholder="Email" ng-model="formData.email" required>
+                 <textarea ng-click="writing()" class="message" name="message" placeholder="Message" ng-model="formData.message" required></textarea>
             <button  type="submit" class="butt" name="submit">Send!</button>
             </form>
 </section>
