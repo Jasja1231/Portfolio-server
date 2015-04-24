@@ -218,7 +218,9 @@ background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   outline:none;
 }
 
-
+.butt:focus{
+    outline:none;
+}
 /*
 end form for sending 
 */
@@ -707,4 +709,28 @@ border-color:green;
 
 h1 span {
   color:silver;
+}
+
+.ngdialog.ngdialog-theme-default{
+  position: relative;
+  top: -800px;
+
+}
+.ngdialog.ngdialog-theme-default .ngdialog-content{
+  width: 400px;
+  height: 450px;
+}
+
+div #modal h1{
+font: 'Alegreya Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 305px) /* Mobile */ {
+
+.ngdialog.ngdialog-theme-default{
+  position: relative;
+  top: -850px;
+
+}
+
 }

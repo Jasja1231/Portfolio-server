@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module('portfolioApp',['ui.router', 'ngAnimate']);
+    var app = angular.module('portfolioApp',['ui.router', 'ngAnimate', 'ngDialog']);
 
  app.config(function($stateProvider, $urlRouterProvider) {
 

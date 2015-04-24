@@ -2,29 +2,6 @@
  * Route definitions is here
  */
 module.exports = function(router) {
-  var nodemailer = require('nodemailer');
-    router.route('/test')
-
-        .get(function (req, res) {
-           var obj=[{
-           	name:"Vova",
-           	age:21
-           },
-           {
-           	name:"Roman",
-           	age:21
-           }]
-            res.send(obj);
-
-        });
-
-    router.route('/tes')
-
-        .get(function (req, res) {
-           var obj2="hi,world"
-            res.send(obj2);
-
-        });
 
     router.route('/form')
 
