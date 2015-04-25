@@ -35,9 +35,17 @@
  </head>
      <body  ng-controller="navCtrl"> 
          <!-- view home-->
+                <div ui-view='home'></div>
              <div class="ui-view-container">
+                                    <div class="row">
+      <div class=" col-md-4 col-lg-4 col-sm-2 col-xs-1"></div>
+            <div class="col-md-4 col-lg-4 col-sm-8 col-xs-10">
+                             <img src="images/test.jpg" alt="..." class="img-circle img-responsive foto">
+            </div>
+     <div class=" col-md-4 col-lg-4 col-sm-2 col-xs-1"></div>
+                          </div>
 
-       <div ui-view='home'></div>
+
            <!-- navigation -->
            <container  ng-hide="$state.includes('afterSending')">
            <div class=" col-md-1 col-lg-1 col-sm-1 invisible-xs-block"></div>
